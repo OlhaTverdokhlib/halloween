@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/halloween/static/css/main.73de3e0c.css",
+    "main.js": "/halloween/static/js/main.ae760de4.js",
+    "static/css/32.6b98a497.chunk.css": "/halloween/static/css/32.6b98a497.chunk.css",
+    "static/js/32.7260b331.chunk.js": "/halloween/static/js/32.7260b331.chunk.js",
+    "static/css/515.bf8c2af8.chunk.css": "/halloween/static/css/515.bf8c2af8.chunk.css",
+    "static/js/515.bf7b418f.chunk.js": "/halloween/static/js/515.bf7b418f.chunk.js",
+    "static/media/logoWeels.png": "/halloween/static/media/logoWeels.9f93b9f0b286362c27c9.png",
+    "static/media/Manrope-Medium.ttf": "/halloween/static/media/Manrope-Medium.08894ccb04665d1a9d53.ttf",
+    "static/media/Manrope-Regular.ttf": "/halloween/static/media/Manrope-Regular.a9b9e09fe6b69741f316.ttf",
+    "static/media/car-main.jpg": "/halloween/static/media/car-main.831ea5c30caa9d38b657.jpg",
+    "index.html": "/halloween/index.html",
+    "main.73de3e0c.css.map": "/halloween/static/css/main.73de3e0c.css.map",
+    "main.ae760de4.js.map": "/halloween/static/js/main.ae760de4.js.map",
+    "32.6b98a497.chunk.css.map": "/halloween/static/css/32.6b98a497.chunk.css.map",
+    "32.7260b331.chunk.js.map": "/halloween/static/js/32.7260b331.chunk.js.map",
+    "515.bf8c2af8.chunk.css.map": "/halloween/static/css/515.bf8c2af8.chunk.css.map",
+    "515.bf7b418f.chunk.js.map": "/halloween/static/js/515.bf7b418f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73de3e0c.css",
+    "static/js/main.ae760de4.js"
+  ]
+}
