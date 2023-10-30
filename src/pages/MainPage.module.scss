@@ -2,25 +2,203 @@
 @import '../styles/utilities/variables';
 
 .block {
-  background-image: url('../car-main.jpg');
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-  position: relative;
-  margin-top: -14px;
+  background-size: contain;
+  background-image: url('../images/Halloween_2023_home_banner.webp');
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+
+  @include minW-Tablet {
+    width: 100%;
+
+    background-size: auto;
+
+    height: 100vh;
+    position: relative;
+    padding-top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // margin-top: -14px;
 
   &__welcome {
     display: flex;
+    flex-direction: column;
     position: relative;
-    justify-content: center;
     align-items: center;
     height: 100%;
     font-size: 48px;
-    z-index: 1; 
-    color: $accent-color; 
-    background-color: rgba(255, 255, 255, 0.7); 
-    padding: 20px;
-   
-    box-shadow: 0 0 10px rgba($accent-color, 0.5); 
+    z-index: 1;
+    color: red;
   }
+  &__btn {
+    padding: 10px 20px;
+    margin-top: 16px;
+    font-size: 16px;
+    width: 200px;
+    height: 60px;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    cursor: pointer;
+    color: rgb(230, 131, 131);
+    background-color: rgb(43, 7, 13);
+    font-size: 25px;
+    font-family: 'Nosifer', sans-serif;
+    background-image: url('../images/red.png');
+    background-size: 100% 60%;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.3);
+    transition: box-shadow 0.3s ease-in-out, background-size 0.3s, color 0.3s,
+      transform 0.3s ease-in-out;
+
+    &:hover {
+      //  box-shadow: 0px 6px 8px rgba(255, 255, 255, 0.5);
+      background-size: 100% 90%;
+      transform: scale(1.05);
+      color: rgb(244, 205, 192);
+      text-shadow: white;
+    }
+  }
+
+  &__img__wheel {
+    width: 200px;
+    height: 200px;
+    transition: transform 3s ease-in-out;
+
+    @include maxW-Tablet {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  &__result {
+    margin-top: 20px;
+    display: none;
+
+    &__img {
+      width: auto;
+      height: 160px;
+      margin-top: 10px;
+      margin-bottom: 0;
+      padding: 0;
+
+      @include minW-Tablet {
+        height: 200px;
+      }
+    }
+  }
+  &__mov {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    opacity: 0;
+    animation: fadeIn 15s ease infinite;
+    @include maxW-Tablet {
+      width: 80px;
+    }
+  }
+
+  &__bat {
+    position: absolute;
+    top: 600px;
+    left: 100px;
+    opacity: 1;
+    animation: fadeOut 15s ease infinite;
+    @include maxW-Tablet {
+      width: 120px;
+    }
+  }
+
+  &__bat1 {
+    position: absolute;
+    top: 300px;
+    right: 100px;
+    opacity: 1;
+    animation: fadeOut 15s ease infinite;
+  }
+
+  &__mov__return {
+    transform: scaleX(-1);
+    position: absolute;
+    top: 400px;
+    right: 0;
+    opacity: 1;
+    animation: fadeOut 15s ease infinite;
+
+    @include maxW-Tablet {
+      width: 120px;
+    }
+  }
+
+  &__casper {
+    transform: scaleX(-1);
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    opacity: 1;
+    animation: fadeOut 15s ease infinite;
+    @include maxW-Tablet {
+      width: 100px;
+    }
+  }
+  &__hero {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'YsabeauInfant', sans-serif;
+
+    @include minW-Tablet {
+      font-size: 48px;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+// #heroName {
+//   font-size: 18px;
+//   font-weight: bold;
+//   font-family: 'Alegrea', sans-serif;
+// }
+
+.spin {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+p {
+  margin: 0;
 }
