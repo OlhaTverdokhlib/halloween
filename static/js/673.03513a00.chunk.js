@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkhalloween=self.webpackChunkhalloween||[]).push([[673],{2673:function(e,n,l){l.r(n);var s=l(2791),a=l(7689),c=l(184);n.default=function(e){e.children;return(0,c.jsx)(c.Fragment,{children:(0,c.jsx)("main",{children:(0,c.jsx)(s.Suspense,{fallback:(0,c.jsx)("div",{children:"Loading..."}),children:(0,c.jsx)(a.j3,{})})})})}}}]);
+//# sourceMappingURL=673.03513a00.chunk.js.map
